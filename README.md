@@ -2,7 +2,7 @@
 
 ### 1. Csmall
 Csmall é um subconjunto da linguagem C, com um numero reduzido de tokens.
-### 1. Como Compilar
+### 2. Como Compilar
 ```sh
   # Clone o repositorio
   $ git clone https://github.com/frandepaula/Analisador-Lexico.git
