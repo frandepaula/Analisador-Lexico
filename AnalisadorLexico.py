@@ -8,7 +8,7 @@ def analisador_lexico(f_in):
   buffer = [] #forma cada lexema 
   token_lista = [] #tokens reconhecidos 
   estado = 0 #estado inicial do automato
-  cont_linha = 1 
+  cont_linha = 1 #salva o numero atual da linha 
 
   for linha in f_in: #percorre as linhas do arquivo de entrada
     linha = linha.rstrip('\n')
@@ -16,7 +16,7 @@ def analisador_lexico(f_in):
 
     while (cont_char < len(linha)): #percorre todos os caracteres da linha
 
-      char = linha[cont_char]
+      char = linha[cont_char] #le o proximo caractere do buffer
 
       if estado == 0:
         if char.isalpha():
